@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		725D542D237382B500A9173B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725D542C237382B500A9173B /* AppDelegate.swift */; };
+		725D542F237382B500A9173B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725D542E237382B500A9173B /* SceneDelegate.swift */; };
+		725D5432237382B500A9173B /* Nanotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 725D5430237382B500A9173B /* Nanotes.xcdatamodeld */; };
+		725D5434237382B500A9173B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725D5433237382B500A9173B /* ContentView.swift */; };
+		725D5436237382B700A9173B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 725D5435237382B700A9173B /* Assets.xcassets */; };
+		725D5439237382B700A9173B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 725D5438237382B700A9173B /* Preview Assets.xcassets */; };
+		725D543C237382B700A9173B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 725D543A237382B700A9173B /* LaunchScreen.storyboard */; };
+		725D5447237382B800A9173B /* NanotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725D5446237382B800A9173B /* NanotesTests.swift */; };
+		725D5452237382B800A9173B /* NanotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725D5451237382B800A9173B /* NanotesUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		725D5443237382B800A9173B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 725D5421237382B500A9173B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 725D5428237382B500A9173B;
+			remoteInfo = Nanotes;
+		};
+		725D544E237382B800A9173B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 725D5421237382B500A9173B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 725D5428237382B500A9173B;
+			remoteInfo = Nanotes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		725D5429237382B500A9173B /* Nanotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nanotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		725D542C237382B500A9173B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		725D542E237382B500A9173B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		725D5431237382B500A9173B /* Nanotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Nanotes.xcdatamodel; sourceTree = "<group>"; };
+		725D5433237382B500A9173B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		725D5435237382B700A9173B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		725D5438237382B700A9173B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		725D543B237382B700A9173B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		725D543D237382B700A9173B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		725D5442237382B800A9173B /* NanotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NanotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		725D5446237382B800A9173B /* NanotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NanotesTests.swift; sourceTree = "<group>"; };
+		725D5448237382B800A9173B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		725D544D237382B800A9173B /* NanotesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NanotesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		725D5451237382B800A9173B /* NanotesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NanotesUITests.swift; sourceTree = "<group>"; };
+		725D5453237382B800A9173B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		725D5426237382B500A9173B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		725D543F237382B800A9173B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		725D544A237382B800A9173B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		725D5420237382B500A9173B = {
+			isa = PBXGroup;
+			children = (
+				725D542B237382B500A9173B /* Nanotes */,
+				725D5445237382B800A9173B /* NanotesTests */,
+				725D5450237382B800A9173B /* NanotesUITests */,
+				725D542A237382B500A9173B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		725D542A237382B500A9173B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				725D5429237382B500A9173B /* Nanotes.app */,
+				725D5442237382B800A9173B /* NanotesTests.xctest */,
+				725D544D237382B800A9173B /* NanotesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		725D542B237382B500A9173B /* Nanotes */ = {
+			isa = PBXGroup;
+			children = (
+				725D542C237382B500A9173B /* AppDelegate.swift */,
+				725D542E237382B500A9173B /* SceneDelegate.swift */,
+				725D5433237382B500A9173B /* ContentView.swift */,
+				725D5435237382B700A9173B /* Assets.xcassets */,
+				725D543A237382B700A9173B /* LaunchScreen.storyboard */,
+				725D543D237382B700A9173B /* Info.plist */,
+				725D5430237382B500A9173B /* Nanotes.xcdatamodeld */,
+				725D5437237382B700A9173B /* Preview Content */,
+			);
+			path = Nanotes;
+			sourceTree = "<group>";
+		};
+		725D5437237382B700A9173B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				725D5438237382B700A9173B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		725D5445237382B800A9173B /* NanotesTests */ = {
+			isa = PBXGroup;
+			children = (
+				725D5446237382B800A9173B /* NanotesTests.swift */,
+				725D5448237382B800A9173B /* Info.plist */,
+			);
+			path = NanotesTests;
+			sourceTree = "<group>";
+		};
+		725D5450237382B800A9173B /* NanotesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				725D5451237382B800A9173B /* NanotesUITests.swift */,
+				725D5453237382B800A9173B /* Info.plist */,
+			);
+			path = NanotesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		725D5428237382B500A9173B /* Nanotes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 725D5456237382B800A9173B /* Build configuration list for PBXNativeTarget "Nanotes" */;
+			buildPhases = (
+				725D5425237382B500A9173B /* Sources */,
+				725D5426237382B500A9173B /* Frameworks */,
+				725D5427237382B500A9173B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nanotes;
+			productName = Nanotes;
+			productReference = 725D5429237382B500A9173B /* Nanotes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		725D5441237382B800A9173B /* NanotesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 725D5459237382B800A9173B /* Build configuration list for PBXNativeTarget "NanotesTests" */;
+			buildPhases = (
+				725D543E237382B800A9173B /* Sources */,
+				725D543F237382B800A9173B /* Frameworks */,
+				725D5440237382B800A9173B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				725D5444237382B800A9173B /* PBXTargetDependency */,
+			);
+			name = NanotesTests;
+			productName = NanotesTests;
+			productReference = 725D5442237382B800A9173B /* NanotesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		725D544C237382B800A9173B /* NanotesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 725D545C237382B800A9173B /* Build configuration list for PBXNativeTarget "NanotesUITests" */;
+			buildPhases = (
+				725D5449237382B800A9173B /* Sources */,
+				725D544A237382B800A9173B /* Frameworks */,
+				725D544B237382B800A9173B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				725D544F237382B800A9173B /* PBXTargetDependency */,
+			);
+			name = NanotesUITests;
+			productName = NanotesUITests;
+			productReference = 725D544D237382B800A9173B /* NanotesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		725D5421237382B500A9173B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Adrien Wilkins";
+				TargetAttributes = {
+					725D5428237382B500A9173B = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					725D5441237382B800A9173B = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 725D5428237382B500A9173B;
+					};
+					725D544C237382B800A9173B = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 725D5428237382B500A9173B;
+					};
+				};
+			};
+			buildConfigurationList = 725D5424237382B500A9173B /* Build configuration list for PBXProject "Nanotes" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 725D5420237382B500A9173B;
+			productRefGroup = 725D542A237382B500A9173B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				725D5428237382B500A9173B /* Nanotes */,
+				725D5441237382B800A9173B /* NanotesTests */,
+				725D544C237382B800A9173B /* NanotesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		725D5427237382B500A9173B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				725D543C237382B700A9173B /* LaunchScreen.storyboard in Resources */,
+				725D5439237382B700A9173B /* Preview Assets.xcassets in Resources */,
+				725D5436237382B700A9173B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		725D5440237382B800A9173B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		725D544B237382B800A9173B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		725D5425237382B500A9173B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				725D542D237382B500A9173B /* AppDelegate.swift in Sources */,
+				725D5432237382B500A9173B /* Nanotes.xcdatamodeld in Sources */,
+				725D5434237382B500A9173B /* ContentView.swift in Sources */,
+				725D542F237382B500A9173B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		725D543E237382B800A9173B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				725D5447237382B800A9173B /* NanotesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		725D5449237382B800A9173B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				725D5452237382B800A9173B /* NanotesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		725D5444237382B800A9173B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 725D5428237382B500A9173B /* Nanotes */;
+			targetProxy = 725D5443237382B800A9173B /* PBXContainerItemProxy */;
+		};
+		725D544F237382B800A9173B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 725D5428237382B500A9173B /* Nanotes */;
+			targetProxy = 725D544E237382B800A9173B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		725D543A237382B700A9173B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				725D543B237382B700A9173B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		725D5454237382B800A9173B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		725D5455237382B800A9173B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		725D5457237382B800A9173B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Nanotes/Preview Content\"";
+				DEVELOPMENT_TEAM = 646TAXN5JB;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Nanotes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tech.ukiyo.Nanotes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		725D5458237382B800A9173B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Nanotes/Preview Content\"";
+				DEVELOPMENT_TEAM = 646TAXN5JB;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Nanotes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tech.ukiyo.Nanotes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		725D545A237382B800A9173B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 646TAXN5JB;
+				INFOPLIST_FILE = NanotesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tech.ukiyo.NanotesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nanotes.app/Nanotes";
+			};
+			name = Debug;
+		};
+		725D545B237382B800A9173B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 646TAXN5JB;
+				INFOPLIST_FILE = NanotesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tech.ukiyo.NanotesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nanotes.app/Nanotes";
+			};
+			name = Release;
+		};
+		725D545D237382B800A9173B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 646TAXN5JB;
+				INFOPLIST_FILE = NanotesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tech.ukiyo.NanotesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Nanotes;
+			};
+			name = Debug;
+		};
+		725D545E237382B800A9173B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 646TAXN5JB;
+				INFOPLIST_FILE = NanotesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tech.ukiyo.NanotesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Nanotes;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		725D5424237382B500A9173B /* Build configuration list for PBXProject "Nanotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				725D5454237382B800A9173B /* Debug */,
+				725D5455237382B800A9173B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		725D5456237382B800A9173B /* Build configuration list for PBXNativeTarget "Nanotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				725D5457237382B800A9173B /* Debug */,
+				725D5458237382B800A9173B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		725D5459237382B800A9173B /* Build configuration list for PBXNativeTarget "NanotesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				725D545A237382B800A9173B /* Debug */,
+				725D545B237382B800A9173B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		725D545C237382B800A9173B /* Build configuration list for PBXNativeTarget "NanotesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				725D545D237382B800A9173B /* Debug */,
+				725D545E237382B800A9173B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		725D5430237382B500A9173B /* Nanotes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				725D5431237382B500A9173B /* Nanotes.xcdatamodel */,
+			);
+			currentVersion = 725D5431237382B500A9173B /* Nanotes.xcdatamodel */;
+			path = Nanotes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 725D5421237382B500A9173B /* Project object */;
+}
