@@ -9,12 +9,9 @@
 import SwiftUI
 import CoreData
 
-// TODO: Need to load notes from CoreData Query into textfield
 
 // MARK: Content View
 struct ContentView: View {
-    
-    
     
     @FetchRequest(entity: Note.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \Note.dateCreated, ascending: true)]
     ) var notesQuery: FetchedResults<Note>
@@ -24,7 +21,7 @@ struct ContentView: View {
     @State var isNewNote = false
     @State var notesField: String = ""
     @State var currentNoteNumber = 0 // Used to keep track of notes for note buttons
-    @State var notesTextArray = [String]() // All of the nanotes docs are stored here from the query.
+    @ObservedObject var liveNotebook = notebook()// All of the nanotes docs are stored here from the query.
     @Environment(\.managedObjectContext) var managedObjectContext
                           
     
@@ -39,7 +36,7 @@ struct ContentView: View {
         if (isNewNote) {
             
             let newNote = Note(context: self.managedObjectContext)
-            newNote.contents = notesField
+            newNote.contents = notesField //TODO: Should be the livenotebook page
             newNote.dateCreated = Date.init()
             newNote.id = UUID.init()
             
@@ -71,16 +68,26 @@ struct ContentView: View {
         
         // change the loaded note
         currentNoteNumber += 1
-        if (currentNoteNumber > notesQuery.count) {
+        if (currentNoteNumber >= liveNotebook.pages.count) {
             isNewNote = true
-            notesField = "" //Blank out the notes field and inactivate the left arrow.
+            // Add new blank page
+            liveNotebook.addPage("")
+            
+            //Blank out the notes field and inactivate the left arrow.
             
         }
     }
     
+    // # TODO: This function never gets called, we tick on arrow presses
     func tick() {
         totalNotes = notesQuery.count
-        currentNoteNumber = totalNotes
+        if (totalNotes < liveNotebook.pages.count) {
+            currentNoteNumber = totalNotes
+        } else {
+            liveNotebook.addPage("")
+        }
+        
+        
     }
     /*
      bootstrap:
@@ -88,8 +95,8 @@ struct ContentView: View {
      */
     private func bootstrap() {
         
-        notesTextArray = notesQuery.compactMap({$0.contents})
-        totalNotes = notesQuery.count
+        liveNotebook.pages = notesQuery.compactMap({$0.contents})
+        totalNotes = liveNotebook.pages.count
         currentNoteNumber = 0
         
         
@@ -113,12 +120,12 @@ struct ContentView: View {
                         .foregroundColor(Color.white)
                     
                     // We take the notes in the array and match them with the current note counter
-                    TextField( "No notes yet!", text: $notesField)
+                    TextField( "No notes yet!", text: $liveNotebook.pages[currentNoteNumber])
+                        
                         .lineLimit(0)
                     
                 }
                 
-                    
                     Divider()
                 
                 Button(action: commitNote) {
